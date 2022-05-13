@@ -1,0 +1,45 @@
+unit UnitCadFrascos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ComCtrls, Vcl.StdCtrls;
+
+type
+  TFormCadFrascos = class(TForm)
+    edFrasco: TEdit;
+    Label1: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+   id : string;
+  end;
+
+var
+  FormCadFrascos: TFormCadFrascos;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormCadFrascos.Button1Click(Sender: TObject);
+begin
+  if edFrasco.Text = '' then
+  begin
+    ShowMessage('O campo Nome não pode ficar vazio');
+    exit;
+    end;
+end;
+
+procedure TFormCadFrascos.Button2Click(Sender: TObject);
+begin
+  close;
+end;
+
+end.

@@ -1,0 +1,32 @@
+unit UnitCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ComCtrls, System.Actions, Vcl.ActnList, Vcl.ExtCtrls, Vcl.ToolWin;
+
+type
+  TFormCliente = class(TForm)
+    ToolBar1: TToolBar;
+    Panel1: TPanel;
+    ActionList1: TActionList;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    DBGrid1: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCliente: TFormCliente;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/06 10:51:34.000.422,=C:\Users\I7\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/11 10:05:40.000.571,=C:\Users\I7\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/11 10:06:29.000.071,C:\Users\I7\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitPrincipal.dfm</Transaction>
+    <Transaction>2022/05/11 10:06:29.000.070,C:\Users\I7\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitPrincipal.pas</Transaction>
+    <Transaction>2022/05/11 10:06:42.000.543,C:\Users\I7\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\I7\Desktop\SistemaEstoque\Estoque.dproj</Transaction>
+    <Transaction>2022/05/11 10:07:55.000.606,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/11 10:09:47.000.092,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitCadMovimentacao.dfm</Transaction>
+    <Transaction>2022/05/11 10:09:47.000.092,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitCadMovimentacao.pas</Transaction>
+    <Transaction>2022/05/11 10:10:14.000.933,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/11 10:11:09.000.410,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitConsMovimentacao.pas</Transaction>
+    <Transaction>2022/05/11 10:11:09.000.410,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitConsMovimentacao.dfm</Transaction>
+    <Transaction>2022/05/11 14:16:49.000.257,=C:\Users\I7\Desktop\SistemaEstoque\UnitDM.pas</Transaction>
+    <Transaction>2022/05/11 14:16:55.000.065,=C:\Users\I7\Desktop\SistemaEstoque\UnitCadProdutos.pas</Transaction>
+    <Transaction>2022/05/12 14:10:58.000.830,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/12 14:11:28.000.179,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\Teste de Projeto\UnitTampas.dfm</Transaction>
+    <Transaction>2022/05/12 14:11:28.000.179,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\Teste de Projeto\UnitTampas.pas</Transaction>
+    <Transaction>2022/05/12 14:44:54.000.690,C:\Users\I7\Desktop\Teste de Projeto\UnitTampas.pas=</Transaction>
+    <Transaction>2022/05/12 14:45:30.000.749,=C:\Users\I7\Desktop\Sistema de estoque\UnitTampas.pas</Transaction>
+    <Transaction>2022/05/12 14:47:08.000.360,=C:\Users\I7\Desktop\SistemaEstoque\UnitTampas.pas</Transaction>
+    <Transaction>2022/05/12 14:48:51.000.264,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/12 14:53:11.000.755,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitCadTampas.dfm</Transaction>
+    <Transaction>2022/05/12 14:53:11.000.755,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitCadTampas.pas</Transaction>
+    <Transaction>2022/05/12 15:53:08.000.168,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/12 15:54:56.000.668,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitCadFrascos.dfm</Transaction>
+    <Transaction>2022/05/12 15:54:56.000.668,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitCadFrascos.pas</Transaction>
+    <Transaction>2022/05/12 15:56:26.000.078,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/12 15:59:28.000.983,C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas=C:\Users\I7\Desktop\SistemaEstoque\UnitFrasco.pas</Transaction>
+    <Transaction>2022/05/12 15:59:28.000.983,C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm=C:\Users\I7\Desktop\SistemaEstoque\UnitFrasco.dfm</Transaction>
+    <Transaction>2022/05/13 09:33:48.509,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 09:35:34.527,C:\Users\I7\Desktop\SistemaEstoque\UnitCliente.dfm=C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm</Transaction>
+    <Transaction>2022/05/13 09:35:34.527,C:\Users\I7\Desktop\SistemaEstoque\UnitCliente.pas=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 09:48:28.113,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 09:49:16.089,C:\Users\I7\Desktop\SistemaEstoque\UnitCadCliente.dfm=C:\Users\I7\Desktop\SistemaEstoque\Unit1.dfm</Transaction>
+    <Transaction>2022/05/13 09:49:16.089,C:\Users\I7\Desktop\SistemaEstoque\UnitCadCliente.pas=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 12:27:51.129,=C:\Users\I7\Desktop\SistemaEstoque\Unit1.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="UnitCadFrascos.pas"/>
+    <File Path="UnitCadFrascos.dfm"/>
+    <File Path="UnitCadMovimentacao.pas"/>
+    <File Path="UnitCadMovimentacao.dfm"/>
+    <File Path="UnitCadProdutos.pas"/>
+    <File Path="UnitCadProdutos.dfm"/>
+    <File Path="UnitCadTampas.pas"/>
+    <File Path="UnitCadTampas.dfm"/>
+    <File Path="UnitCliente.pas"/>
+    <File Path="UnitCliente.dfm"/>
+    <File Path="UnitConsMovimentacao.pas"/>
+    <File Path="UnitConsMovimentacao.dfm"/>
+    <File Path="UnitDM.pas"/>
+    <File Path="UnitDM.dfm"/>
+    <File Path="UnitFrasco.pas"/>
+    <File Path="UnitFrasco.dfm"/>
+    <File Path="UnitPrincipal.pas"/>
+    <File Path="UnitPrincipal.dfm"/>
+    <File Path="UnitTampas.pas"/>
+    <File Path="UnitTampas.dfm"/>
+    <File Path="UnitCadCliente.pas"/>
+    <File Path="UnitCadCliente.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

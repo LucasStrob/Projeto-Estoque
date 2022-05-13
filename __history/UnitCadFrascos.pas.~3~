@@ -1,0 +1,28 @@
+unit UnitCadFrascos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ComCtrls, Vcl.StdCtrls;
+
+type
+  TFormCadFrascos = class(TForm)
+    edFrasco: TEdit;
+    Label1: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCadFrascos: TFormCadFrascos;
+
+implementation
+
+{$R *.dfm}
+
+end.

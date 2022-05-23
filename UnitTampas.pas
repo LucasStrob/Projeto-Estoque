@@ -91,6 +91,12 @@ end;
 procedure TFormTampas.FormShow(Sender: TObject);
 begin
   pegaDados;
+  with sqlTampas do
+  begin
+    close;
+    sql.Text := 'SELECT * FROM tampas';
+    open;
+  end;
 end;
 
 procedure TFormTampas.pegaDados;

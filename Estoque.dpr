@@ -12,7 +12,9 @@ uses
   UnitCadFrascos in 'UnitCadFrascos.pas' {FormCadFrascos},
   UnitFrasco in 'UnitFrasco.pas' {FormFrascos},
   UnitCliente in 'UnitCliente.pas' {FormCliente},
-  UnitCadCliente in 'UnitCadCliente.pas' {FormCadCliente};
+  UnitCadCliente in 'UnitCadCliente.pas' {FormCadCliente},
+  UnitPedidos in 'UnitPedidos.pas' {FormPedido},
+  UnitNovoPedido in 'UnitNovoPedido.pas' {FormNovoPedido};
 
 {$R *.res}
 

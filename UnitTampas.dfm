@@ -21,6 +21,7 @@ object FormTampas: TFormTampas
     Height = 372
     Align = alClient
     DataSource = dsTampas
+    ReadOnly = True
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -34,9 +35,7 @@ object FormTampas: TFormTampas
     Width = 718
     Height = 58
     Align = alTop
-    Caption = 'Panel1'
     TabOrder = 1
-    ExplicitTop = 31
   end
   object ToolBar1: TToolBar
     Left = 0
@@ -65,7 +64,7 @@ object FormTampas: TFormTampas
     end
   end
   object Button1: TButton
-    Left = 168
+    Left = 504
     Top = 52
     Width = 75
     Height = 25

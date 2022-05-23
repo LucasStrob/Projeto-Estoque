@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.Mask,
-  Vcl.DBCtrls;
+  Vcl.DBCtrls, Vcl.ExtCtrls;
 
 type
   TFormPrincipal = class(TForm)
@@ -21,6 +21,8 @@ type
     CadastroTampas1: TMenuItem;
     CadastroFrascos1: TMenuItem;
     CadastroCliente1: TMenuItem;
+    CadastroPedido1: TMenuItem;
+    Panel1: TPanel;
     procedure Sair1Click(Sender: TObject);
     procedure CadastrodeProdutos1Click(Sender: TObject);
     procedure GerenciarMovimentaes1Click(Sender: TObject);
@@ -28,6 +30,7 @@ type
     procedure CadastroTampas1Click(Sender: TObject);
     procedure CadastroFrascos1Click(Sender: TObject);
     procedure CadastroCliente1Click(Sender: TObject);
+    procedure CadastroPedido1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,7 +45,7 @@ implementation
 {$R *.dfm}
 
 uses UnitCadMovimentacao, UnitConsMovimentacao, UnitCadProdutos, UnitTampas,
-  UnitFrasco, UnitCliente;
+  UnitFrasco, UnitCliente, UnitPedidos;
 
 procedure TFormPrincipal.CadastroCliente1Click(Sender: TObject);
 begin
@@ -73,6 +76,17 @@ begin
     begin
 
     end;
+end;
+
+procedure TFormPrincipal.CadastroPedido1Click(Sender: TObject);
+begin
+  with TFormPedido.create(self) do
+  begin
+    if showmodal = mrOK then
+    begin
+
+    end;
+  end;
 end;
 
 procedure TFormPrincipal.CadastroTampas1Click(Sender: TObject);

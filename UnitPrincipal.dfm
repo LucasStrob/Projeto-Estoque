@@ -15,6 +15,17 @@ object FormPrincipal: TFormPrincipal
   WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 711
+    Height = 41
+    Align = alTop
+    TabOrder = 0
+    ExplicitLeft = 224
+    ExplicitTop = 24
+    ExplicitWidth = 185
+  end
   object MainMenu1: TMainMenu
     Left = 320
     Top = 136
@@ -42,6 +53,10 @@ object FormPrincipal: TFormPrincipal
       object CadastroCliente1: TMenuItem
         Caption = 'Cadastro Cliente'
         OnClick = CadastroCliente1Click
+      end
+      object CadastroPedido1: TMenuItem
+        Caption = 'Cadastro Pedido'
+        OnClick = CadastroPedido1Click
       end
     end
     object Movimentaes1: TMenuItem

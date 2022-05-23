@@ -16,6 +16,7 @@ type
     Button2: TButton;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
     contador : integer;
@@ -48,30 +49,32 @@ begin
   end;
 
   // VERIFICA SE CNPJ JA ESTA CADASTRADO
-  if id = '' then
-  begin
     with dm.qu do
     begin
       Close;
-      sql.Text := 'SELECT cnpj FROM cliente where ' +
-                  'cnpj = ' +edCnpj.Text;
+      if id = '' then
+        sql.Text := 'SELECT cnpj FROM cliente where ' +
+                  'cnpj = ' +edCnpj.Text
+      else
+        sql.Text := 'SELECT cnpj FROM cliente where ' +
+                  'cnpj = ' +edCnpj.Text + ' and id <> ' + id;
       Open;
-      if FieldByName('cnpj').AsString <> '' then
+      if FieldByName('cnpj').AsString = edCnpj.Text then
       begin
         ShowMessage('Este CNPJ possui Cadastrado!');
         Exit;
-      end;
+      end
     end;
-  end;
   //-------------------------------------
-
+  // INSERE OS DADOS DENTRO DO BANCO DE DADOS
   with  dm.qu do
     begin
       Close;
       if id <> '' then
       begin
-        SQL.Text := 'UPDATE cliente SET nome = ' +QuotedStr(edNome.Text)+ ' WHERE id = ' + id;
-        SQL.Text := 'UPDATE cliente SET cnpj = ' +QuotedStr(edCnpj.Text)+ 'WHERE id = ' + id;
+        SQL.Text := 'UPDATE cliente SET nome = ' +QuotedStr(edNome.Text )+
+                                     ', cnpj = ' +QuotedStr(edCnpj.Text)+
+                                     ' WHERE id = ' + id;
 
 
       end
@@ -89,6 +92,21 @@ end;
 procedure TFormCadCliente.Button2Click(Sender: TObject);
 begin
   close;
+end;
+
+procedure TFormCadCliente.FormShow(Sender: TObject);
+begin
+  if id <> '' then
+  begin
+    with dm.qu do
+    begin
+      close;
+      SQL.Text := 'SELECT * FROM cliente WHERE id = '+ id;
+      open;
+      edNome.Text := FieldByName('nome').AsString;
+      edCnpj.Text := FieldByName('cnpj').AsString;
+    end;
+  end;
 end;
 
 end.

@@ -64,6 +64,7 @@ object FormFrascos: TFormFrascos
     Height = 336
     Align = alClient
     DataSource = dsFrascos
+    ReadOnly = True
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

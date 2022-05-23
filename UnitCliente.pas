@@ -46,26 +46,46 @@ implementation
 
 {$R *.dfm}
 
-uses UnitDM, UnitCadCliente;
+uses UnitDM, UnitCadCliente, UnitPedidos, UnitNovoPedido;
 
+//FUNÇÕES BOTÕES
 procedure TFormCliente.acEditarExecute(Sender: TObject);
 begin
   with TFormCadCliente.create(self) do
   begin
     id := sqlCliente.FieldByName('id').AsString;
     if ShowModal = mrOK then
+    begin
+
+    end;
   end;
+
+
 end;
 
 procedure TFormCliente.acExcluirExecute(Sender: TObject);
 begin
-  with dm.qu do
-  begin
-    close;
-    SQL.Text := 'DELETE from cliente WHERE id = ' + sqlCliente.FieldByName('id').AsString;
-    ExecSQL;
-  end;
-  pegaDados;
+
+    with dm.qu do
+    begin
+      Close;
+      SQL.Text:='select TOP 1 id from pedido where id_cliente = ' + sqlCliente.FieldByName('id').AsString;
+      Open;
+      if FieldByName('id').AsString <> '' then
+      begin
+        showMessage('Cliente possui pedidos.');
+        Exit;
+      end;
+    end;
+
+    with dm.qu do
+    begin
+      close;
+      SQL.Text := 'DELETE from cliente WHERE id = ' + sqlCliente.FieldByName('id').AsString;
+      ExecSQL;
+    end;
+
+    pegaDados;
 end;
 
 procedure TFormCliente.acNovoExecute(Sender: TObject);
@@ -78,7 +98,9 @@ begin
     end;
   end;
 end;
+//------------------------------------------------------------------------------
 
+//CRIAÇÃO DE TELAS E PUXA DADOS
 procedure TFormCliente.Button1Click(Sender: TObject);
 begin
  pegaDados;
@@ -93,10 +115,12 @@ procedure TFormCliente.pegadados;
 begin
   with sqlCliente do
   begin
-    close;
+    Close;
     sql.Text := 'SELECT * FROM cliente';
     Open;
+
   end;
 end;
+//------------------------------------------------------------------------------
 
 end.
